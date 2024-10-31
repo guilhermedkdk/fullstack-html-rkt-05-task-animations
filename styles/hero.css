@@ -1,0 +1,232 @@
+.hero {
+  margin: 1.25rem;
+  margin-top: 3rem;
+
+  & h1 {
+    max-width: 41rem;
+    margin-inline: auto;
+
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--text-title);
+  }
+
+  & p.body-lg {
+    max-width: 35.5rem;
+    padding-bottom: 14rem;
+    margin-inline: auto;
+    margin-top: 1rem;
+
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-body);
+  }
+}
+
+.hero-subtitle {
+  & .subtitle {
+    position: relative;
+
+    max-width: 40rem;
+    padding-inline: 1.25rem;
+    margin: 8rem auto 5.5rem;
+
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-body);
+  }
+
+  & img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  & img[src*="spellbook"] {
+    position: absolute;
+    top: -45%;
+    left: 43%;
+
+    transform: rotate(20deg);
+  }
+
+  & img[src*="ouija"] {
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+
+    transform: rotate(-30deg);
+  }
+
+  & img[src*="crystal"] {
+    position: absolute;
+    bottom: -20%;
+    right: 15%;
+
+    transform: rotate(15deg);
+  }
+}
+
+.hero-bg {
+  background: url("../assets/images/hero-background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-bottom: 7rem;
+
+  opacity: 0;
+
+  animation: fadeInImage 3.25s ease-out forwards;
+}
+
+@media (width <= 562px) {
+  .hero-subtitle {
+    & .subtitle {
+      & img[src*="spellbook"] {
+        left: 53%;
+      }
+
+      & img[src*="ouija"] {
+        bottom: -25%;
+        left: 5%;
+      }
+
+      & img[src*="crystal"] {
+        bottom: -35%;
+        right: 6%;
+      }
+    }
+  }
+}
+
+@media (width <= 479.5px) {
+  .hero-subtitle {
+    & .subtitle {
+      & img[src*="spellbook"] {
+        top: -33%;
+        left: 60%;
+      }
+
+      & img[src*="ouija"] {
+        bottom: -15%;
+        left: 5%;
+      }
+
+      & img[src*="crystal"] {
+        bottom: -15%;
+        right: 10%;
+      }
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  .hero {
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & p.body-lg {
+      padding-bottom: 30rem;
+      margin-top: 2rem;
+
+      font-size: 1.25rem;
+    }
+  }
+
+  .hero-bg {
+    position: relative;
+
+    padding-bottom: 2rem;
+  }
+
+  .hero-bg::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+
+    width: 100%;
+    height: 45rem;
+
+    filter: blur(100rem);
+    background-color: rgb(63, 15, 65, 0.9);
+  }
+
+  .hero-subtitle {
+    & .subtitle {
+      max-width: 78rem;
+      padding-block: 4rem;
+      margin-top: 9.125rem;
+
+      font-size: 2rem;
+
+      & span {
+        opacity: 0.5;
+      }
+
+      & strong {
+        color: var(--blue-light);
+        opacity: 0.5;
+      }
+
+      & img {
+        width: 5.5rem;
+        height: 5.5rem;
+        opacity: 0;
+      }
+
+      & img[src*="spellbook"] {
+        top: -10%;
+        right: 48%;
+
+        &:hover {
+          transform: scale(1.1) rotate(25deg);
+          transition: transform 200ms linear;
+        }
+      }
+
+      & img[src*="ouija"] {
+        bottom: -10%;
+        left: 5%;
+
+        transform: rotate(100deg);
+
+        &:hover {
+          transform: scale(1.1) rotate(110deg);
+          transition: transform 200ms linear;
+        }
+      }
+
+      & img[src*="crystal"] {
+        bottom: -10%;
+        right: 2%;
+
+        transform: rotate(-20deg);
+
+        &:hover {
+          transform: scale(1.1) rotate(-5deg);
+
+          transition: transform 200ms linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleInImage {
+  65% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
