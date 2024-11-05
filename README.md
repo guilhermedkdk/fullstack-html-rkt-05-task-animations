@@ -24,11 +24,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Desafio
 
-A Encantos Literários LP foi um desafio do curso Fullstack da Rocketseat no módulo "HTML e CSS Avançando". Nele, apliquei animações, transições e responsividade para criar uma landing page interativa e adaptável.
+A Encantos Literários LP foi um desafio do curso Fullstack da Rocketseat no módulo "HTML e CSS Avançado". Nele, apliquei animações, transições e responsividade para criar uma landing page interativa e adaptável.
 
 ## 📚 Aprendizados
 
-Este projeto foi feito dentro do curso de Fullstack no módulo "HTML e CSS Avançando" da Rocketseat.
+Este projeto foi feito dentro do curso de Fullstack no módulo "HTML e CSS Avançado" da Rocketseat.
 Nele pude consolidar os conhecimentos sobre:
 
 ### CSS
