@@ -93,8 +93,8 @@ body {
 }
 
 .tag {
-  font: var(--tag);
   text-transform: uppercase;
+  font: var(--tag);
 }
 
 .desktop-only {

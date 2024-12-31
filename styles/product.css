@@ -1,11 +1,11 @@
 .product-wrapper {
   & .product-title {
     display: flex;
-    padding-top: 6.5rem;
-    gap: 0.75rem;
-
     justify-content: center;
     align-items: center;
+
+    gap: 0.75rem;
+    padding-top: 6.5rem;
 
     & h2 {
       font-size: 1.5rem;
@@ -23,23 +23,23 @@
 
   & p {
     display: flex;
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-
     justify-content: center;
+
+    margin-top: 0.5rem;
+
+    font-size: 0.875rem;
     color: var(--text-body);
   }
 
   & .book-display {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     max-width: 10rem;
     padding-right: 2rem;
     margin: 7.5rem auto;
-
-    justify-content: center;
-    align-items: center;
 
     & img[src*="book.png"] {
       z-index: 2;
@@ -49,35 +49,36 @@
     }
 
     & img[src*="bookmark-yellow"] {
-      position: absolute;
       z-index: 1;
+      position: absolute;
+      top: -13%;
+      right: -26%;
 
       width: 3.75rem;
       height: 11.25rem;
 
-      top: -13%;
-      right: -26%;
       rotate: 12deg;
     }
 
     & img[src*="bookmark-purple"] {
-      position: absolute;
       z-index: 0;
+      position: absolute;
+      top: 5%;
+      right: -48%;
 
       width: 3.75rem;
       height: 11.25rem;
 
-      top: 5%;
-      right: -48%;
       rotate: 21deg;
     }
 
     & img[src*="pin"] {
       position: absolute;
-      width: 5rem;
-
       bottom: -16%;
       left: -30%;
+
+      width: 5rem;
+
       rotate: -10deg;
     }
   }

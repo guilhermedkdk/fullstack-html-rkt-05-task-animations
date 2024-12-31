@@ -12,9 +12,9 @@ footer {
     & .social {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       text-align: center;
-      align-items: center;
 
       & img[src*="logo-horizontal"] {
         width: 10rem;
@@ -22,25 +22,28 @@ footer {
 
       & .divider {
         display: flex;
+        align-items: center;
+
         padding-top: 0.75rem;
         margin-top: 0.75rem;
         gap: 1rem;
 
         border-top: solid 2px var(--shape-stroke);
-        align-items: center;
+
         text-align: center;
 
         & a {
           all: unset;
-          display: flex;
           cursor: pointer;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           width: 2.5rem;
           height: 2.5rem;
 
           border-radius: 999px;
-          align-items: center;
-          justify-content: center;
 
           transition: background-color 300ms linear;
 
@@ -66,18 +69,17 @@ footer {
 
     & .links {
       display: flex;
+      justify-content: space-evenly;
 
       margin-top: 2.5rem;
       gap: 1.5rem;
-
-      justify-content: space-evenly;
 
       & a {
         all: unset;
         cursor: pointer;
 
-        color: var(--blue-light);
         font: var(--link);
+        color: var(--blue-light);
 
         transition: color 300ms linear;
 
@@ -116,17 +118,16 @@ footer {
     & .footer-wrapper {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
 
       padding: 10.625rem 10rem 6.375rem;
-
-      justify-content: space-between;
 
       & .social {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         text-align: center;
-        align-items: center;
 
         & img[src*="logo-horizontal"] {
           width: 16.5rem;
