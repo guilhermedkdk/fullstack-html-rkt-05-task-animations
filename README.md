@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 📚 Aprendizados
 
-Este projeto foi feito dentro do curso de Fullstack no módulo "HTML e CSS Avançado" da Rocketseat.
+Este projeto foi feito como forma de um desafio dentro do curso de Fullstack no módulo "HTML e CSS Avançado" da Rocketseat.
 Nele pude consolidar os conhecimentos sobre:
 
 ### CSS
